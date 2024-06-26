@@ -1,0 +1,33 @@
+uuid: 5aeb60dd-4eb7-4ac5-904c-22da70bbddfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comment_section
+    - node.type.waterfall
+  module:
+    - comment
+id: node.waterfall.field_comment_section
+field_name: field_comment_section
+entity_type: node
+bundle: waterfall
+label: 'Comment Section'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 25
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

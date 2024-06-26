@@ -1,0 +1,18 @@
+uuid: e87fe891-8aac-4aa0-85ab-649e6b814b67
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.waterfall
+id: node.waterfall.title
+field_name: title
+entity_type: node
+bundle: waterfall
+label: 'Waterfall name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 13f3f146-ea7d-46a3-9256-3b7e284a7e8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: waterfall_url
+label: 'Waterfall URL'
+type: 'canonical_entities:node'
+pattern: '/waterfall/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,10 @@
+uuid: 088549a2-5402-4b69-90bf-83686cda7b68
+langcode: en
+status: true
+dependencies: {  }
+id: long_text
+label: 'Long text'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph is handy when we have long paragraphs.'
+behavior_plugins: {  }

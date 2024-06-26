@@ -1,0 +1,27 @@
+uuid: a8e40169-05e2-4750-8eab-7f70ac9c2510
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.custom_comment_type
+    - field.storage.comment.field_custom_comment_image
+  module:
+    - file
+id: comment.custom_comment_type.field_custom_comment_image
+field_name: field_custom_comment_image
+entity_type: comment
+bundle: custom_comment_type
+label: 'Custom comment image'
+description: 'Upload an image as a custom comment.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: '1 MB'
+  description_field: false
+field_type: file

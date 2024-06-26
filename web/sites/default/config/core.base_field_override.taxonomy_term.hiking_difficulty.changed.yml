@@ -1,0 +1,18 @@
+uuid: 975d612b-cfc4-4e5b-9d40-b03f9a01c38a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hiking_difficulty
+id: taxonomy_term.hiking_difficulty.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: hiking_difficulty
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

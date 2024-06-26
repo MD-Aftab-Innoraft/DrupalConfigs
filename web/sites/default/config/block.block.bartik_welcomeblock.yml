@@ -1,0 +1,25 @@
+uuid: 260eacd4-c0c1-4135-9ef9-2065c94ea599
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9286ae7-61c5-4b5b-8198-43576a00d122'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_welcomeblock
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:f9286ae7-61c5-4b5b-8198-43576a00d122'
+settings:
+  id: 'block_content:f9286ae7-61c5-4b5b-8198-43576a00d122'
+  label: 'welcome block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: cae6f911-025c-4d20-8529-9df362606ad9
+langcode: en
+status: true
+dependencies: {  }
+id: brochure_block
+label: 'Brochure Block'
+revision: 0
+description: 'Use this template to create promotional waterfall brochures.'

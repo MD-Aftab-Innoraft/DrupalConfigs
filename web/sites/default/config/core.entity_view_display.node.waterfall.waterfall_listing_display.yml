@@ -1,0 +1,258 @@
+uuid: f87a8395-155a-421a-8f0f-a08a1862da23
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.waterfall_listing_display
+    - field.field.node.waterfall.body
+    - field.field.node.waterfall.field_comment_section
+    - field.field.node.waterfall.field_hike_difficulty
+    - field.field.node.waterfall.field_hike_duration
+    - field.field.node.waterfall.field_image
+    - field.field.node.waterfall.field_official_website
+    - field.field.node.waterfall.field_walking_and_driving_instru
+    - field.field.node.waterfall.field_waterfall_height
+    - field.field.node.waterfall.field_waterfall_location
+    - field.field.node.waterfall.field_waterfall_video
+    - image.style.wide
+    - node.type.waterfall
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          d033f517-27d0-4724-a715-362a51547a94:
+            uuid: d033f517-27d0-4724-a715-362a51547a94
+            region: first
+            configuration:
+              id: 'field_block:node:waterfall:field_image'
+              label: 'Waterfall image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: 500x500_square
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ef26f996-3e54-432e-ac9c-60764c34439a:
+            uuid: ef26f996-3e54-432e-ac9c-60764c34439a
+            region: second
+            configuration:
+              id: 'field_block:node:waterfall:field_waterfall_location'
+              label: 'Waterfall location'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          54cf2704-9982-46e1-94e9-b09b8a70b89a:
+            uuid: 54cf2704-9982-46e1-94e9-b09b8a70b89a
+            region: second
+            configuration:
+              id: 'field_block:node:waterfall:field_hike_duration'
+              label: 'Hike duration (minutes)'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          5042c206-85e6-49a4-9111-d998b0cced8e:
+            uuid: 5042c206-85e6-49a4-9111-d998b0cced8e
+            region: second
+            configuration:
+              id: 'field_block:node:waterfall:field_hike_difficulty'
+              label: 'Hike difficulty'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          97cc2711-3918-492d-800d-d5fe8df75830:
+            uuid: 97cc2711-3918-492d-800d-d5fe8df75830
+            region: second
+            configuration:
+              id: 'field_block:node:waterfall:field_waterfall_height'
+              label: 'Waterfall height (meters)'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          a3cd6e30-fd1e-4efd-a516-14128d0b1102:
+            uuid: a3cd6e30-fd1e-4efd-a516-14128d0b1102
+            region: content
+            configuration:
+              id: 'field_block:node:waterfall:body'
+              label: 'Waterfall description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.waterfall.waterfall_listing_display
+targetEntityType: node
+bundle: waterfall
+mode: waterfall_listing_display
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hike_difficulty:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_hike_duration:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_official_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_walking_and_driving_instru:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_waterfall_height:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_waterfall_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_waterfall_video:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_comment_section: true
+  langcode: true
+  search_api_excerpt: true

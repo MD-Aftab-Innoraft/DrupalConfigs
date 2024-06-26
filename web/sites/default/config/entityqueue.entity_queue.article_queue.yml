@@ -1,0 +1,26 @@
+uuid: f5296cc5-adf6-4415-a873-a82e730f33d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article_queue
+label: 'Article Queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

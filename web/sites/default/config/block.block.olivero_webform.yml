@@ -1,0 +1,31 @@
+uuid: 965be5cd-c5c4-4580-86b8-a16beb738c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.customer_registration_form
+  module:
+    - system
+    - webform
+  theme:
+    - olivero
+id: olivero_webform
+theme: olivero
+region: sidebar
+weight: -9
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Customer Registration Form'
+  label_display: visible
+  provider: webform
+  webform_id: customer_registration_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

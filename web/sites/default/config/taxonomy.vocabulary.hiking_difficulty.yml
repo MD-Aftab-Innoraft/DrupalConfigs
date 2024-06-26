@@ -1,0 +1,8 @@
+uuid: 7ef376d2-92e7-4284-b2ed-f1acdc3fa33c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hiking Difficulty'
+vid: hiking_difficulty
+description: 'Select/Upload an image which represents this difficulty.'
+weight: 0
