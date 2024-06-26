@@ -1,0 +1,41 @@
+uuid: 387e26e9-48c2-4bc3-b8c1-ccb0844cb26b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_text
+    - node.type.article
+    - paragraphs.paragraphs_type.content_image
+    - paragraphs.paragraphs_type.image_with_caption
+    - paragraphs.paragraphs_type.long_text
+  module:
+    - entity_reference_revisions
+id: node.article.field_body_text
+field_name: field_body_text
+entity_type: node
+bundle: article
+label: 'Body text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      long_text: long_text
+      content_image: content_image
+      image_with_caption: image_with_caption
+    negate: 0
+    target_bundles_drag_drop:
+      content_image:
+        weight: 3
+        enabled: true
+      image_with_caption:
+        weight: 5
+        enabled: true
+      long_text:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

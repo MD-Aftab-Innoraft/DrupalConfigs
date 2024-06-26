@@ -1,0 +1,20 @@
+uuid: 14e9c9ca-001c-49f9-bda8-b069d3db7658
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.waterfall
+id: node.waterfall.uid
+field_name: uid
+entity_type: node
+bundle: waterfall
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

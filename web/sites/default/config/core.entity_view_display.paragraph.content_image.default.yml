@@ -1,0 +1,27 @@
+uuid: 8f657cd3-8523-45b4-8617-d32be9978ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_image.field_the_content_image
+    - paragraphs.paragraphs_type.content_image
+  module:
+    - image
+id: paragraph.content_image.default
+targetEntityType: paragraph
+bundle: content_image
+mode: default
+content:
+  field_the_content_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

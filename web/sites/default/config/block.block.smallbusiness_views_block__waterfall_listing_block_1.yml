@@ -1,0 +1,24 @@
+uuid: 539a2332-5543-41ca-9a84-39aff6580f14
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.waterfall_listing
+  module:
+    - views
+  theme:
+    - smallbusiness
+id: smallbusiness_views_block__waterfall_listing_block_1
+theme: smallbusiness
+region: header
+weight: -9
+provider: null
+plugin: 'views_block:waterfall_listing-block_1'
+settings:
+  id: 'views_block:waterfall_listing-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

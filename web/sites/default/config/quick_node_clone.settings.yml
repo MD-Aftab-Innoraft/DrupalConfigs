@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 6XRelHPjACQVOo9yRQMmbXt-ysCA2Pt6l762bxQQbdw
+exclude:
+  node:
+    waterfall:
+      - field_comment_section
+      - field_hike_difficulty
+      - field_official_website
+  paragraph: {  }
+text_to_prepend_to_title: 'Clone of'
+clone_status: false

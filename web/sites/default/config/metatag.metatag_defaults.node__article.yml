@@ -1,0 +1,8 @@
+uuid: f763212e-055c-4d38-a222-3c0d4a175a54
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  keywords: '[node:field_tags]'

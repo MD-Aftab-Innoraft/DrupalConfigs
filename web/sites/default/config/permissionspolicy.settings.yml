@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: GzCOg5hzNQf2ysA5beQcYvBNmXUmzCClbQsrm9wWAKE
+enforce:
+  enable: true
+  features: {  }

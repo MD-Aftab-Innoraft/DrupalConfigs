@@ -1,0 +1,22 @@
+uuid: d44c08ff-dcc9-460e-b17d-36fee91c2a93
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - smallbusiness
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: smallbusiness_help
+theme: smallbusiness
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

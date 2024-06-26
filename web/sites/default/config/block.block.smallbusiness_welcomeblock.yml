@@ -1,0 +1,25 @@
+uuid: a9bd4425-d159-4aa7-a3d4-6440c0b6c17e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f9286ae7-61c5-4b5b-8198-43576a00d122'
+  module:
+    - block_content
+  theme:
+    - smallbusiness
+id: smallbusiness_welcomeblock
+theme: smallbusiness
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:f9286ae7-61c5-4b5b-8198-43576a00d122'
+settings:
+  id: 'block_content:f9286ae7-61c5-4b5b-8198-43576a00d122'
+  label: 'welcome block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

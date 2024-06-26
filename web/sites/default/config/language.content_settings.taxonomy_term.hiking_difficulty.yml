@@ -1,0 +1,18 @@
+uuid: 3799d5b4-ee61-4b6d-97e3-65624a981c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hiking_difficulty
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.hiking_difficulty
+target_entity_type_id: taxonomy_term
+target_bundle: hiking_difficulty
+default_langcode: site_default
+language_alterable: false

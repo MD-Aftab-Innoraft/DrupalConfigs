@@ -1,0 +1,22 @@
+uuid: 3795e95e-45f6-4c25-9991-88e6d8abedd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hiking_difficulty
+id: taxonomy_term.hiking_difficulty.status
+field_name: status
+entity_type: taxonomy_term
+bundle: hiking_difficulty
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
